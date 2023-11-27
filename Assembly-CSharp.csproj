@@ -46,12 +46,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Bananaman\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\test.cs" />
+     <Compile Include="Assets\Scripts\Portals\Portal.cs" />
      <Folder Include="Assets" />
+     <Folder Include="Assets\Scripts\Portals" />
      <Folder Include="Assets\Scripts" />
      <Folder Include="Assets\Prefabs" />
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\Scripts\Bananaman" />
+     <Folder Include="Assets\Materials" />
      <Folder Include="Assets\Animations" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
