@@ -46,19 +46,28 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Enemies\EnemyController.cs" />
+     <Compile Include="Assets\Scripts\Menus\LeaderboardController.cs" />
      <Compile Include="Assets\Scripts\Bananaman\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Portals\Portal.cs" />
+     <Compile Include="Assets\Scripts\Menus\PauseMenuController.cs" />
+     <Compile Include="Assets\Scripts\Menus\MainMenuController.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scripts\Portals" />
+     <Folder Include="Assets\UI Toolkit\UnityThemes" />
+     <None Include="Assets\UI Toolkit\Layouts\MainMenu.uxml" />
      <Folder Include="Assets\Scripts" />
+     <Folder Include="Assets\Scripts\Menus" />
      <Folder Include="Assets\Prefabs" />
+     <None Include="Assets\UI Toolkit\Layouts\PauseMenu.uxml" />
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\Scripts\Bananaman" />
+     <Folder Include="Assets\UI Toolkit" />
      <Folder Include="Assets\Materials" />
      <Folder Include="Assets\Scenes\SampleScene" />
      <Folder Include="Assets\Scripts\Enemies" />
      <Folder Include="Assets\Scenes\Nav Mesh" />
      <Folder Include="Assets\Animations" />
+     <Folder Include="Assets\UI Toolkit\Layouts" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>

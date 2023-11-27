@@ -10,17 +10,10 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
     public Transform camera;
     public Animator playerAnimator;
-
-    public CinemachineFreeLook freeLook;
     
     public float speed;
     public float SmoothTime = 0.3f;
     private float velocity;
-
-    void Start()
-    {
-        
-    }
     
     void Update()
     {
