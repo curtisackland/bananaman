@@ -45,6 +45,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Enemies\EnemyController.cs" />
      <Compile Include="Assets\Scripts\Bananaman\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Portals\Portal.cs" />
      <Folder Include="Assets" />
@@ -54,6 +55,9 @@
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\Scripts\Bananaman" />
      <Folder Include="Assets\Materials" />
+     <Folder Include="Assets\Scenes\SampleScene" />
+     <Folder Include="Assets\Scripts\Enemies" />
+     <Folder Include="Assets\Scenes\Nav Mesh" />
      <Folder Include="Assets\Animations" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -676,38 +680,17 @@
      <Reference Include="System.Xml.Serialization">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Timeline">
-     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.UI">
-     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.EditorCoroutines.Editor">
      <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="com.unity.cinemachine.editor">
      <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+     <Reference Include="Unity.AI.Navigation">
+     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
      </Reference>
      <Reference Include="Unity.PlasticSCM.Editor">
      <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.State.Editor">
-     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline.Editor">
      <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
@@ -718,23 +701,59 @@
      <Reference Include="Unity.VisualStudio.Editor">
      <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.TextMeshPro">
-     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+     <Reference Include="UnityEditor.UI">
+     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core">
      <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.TextMeshPro.Editor">
-     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.UI">
-     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+     <Reference Include="UnityEngine.UI">
+     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core.Editor">
      <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
      <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Flow">
+     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Flow.Editor">
+     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Timeline">
+     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
+     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
+     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
+     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
+     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.AI.Navigation.Updater">
+     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.State.Editor">
+     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.TextMeshPro">
+     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.TextMeshPro.Editor">
+     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.AI.Navigation.Editor">
+     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State">
      <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
@@ -745,11 +764,8 @@
      <Reference Include="Cinemachine">
      <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualScripting.Flow">
-     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Flow.Editor">
-     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+     <HintPath>C:\Users\curti\OneDrive\Desktop\4482\Bananaman\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
