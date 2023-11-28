@@ -1,9 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<engine:UXML
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:engine="UnityEngine.UIElements"
-    xmlns:editor="UnityEditor.UIElements"
-    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
->
-    
-</engine:UXML>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Layouts/ProgressBar.uss?fileID=7433441132597879392&amp;guid=f95c6e5914b7b8b4983601d1371ac689&amp;type=3#ProgressBar" />
+    <ui:VisualElement style="flex-grow: 1; height: 35%;">
+        <ui:Label tabindex="-1" text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Score" style="justify-content: center; align-self: center; font-size: 40px;" />
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-grow: 1; height: 40%; align-items: center; justify-content: center;">
+        <ui:ProgressBar value="1" name="LaserCooldown" high-value="2" style="width: 15%; height: 20%;" />
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-grow: 1; height: 20px; flex-direction: row; width: 100%;">
+        <ui:VisualElement style="flex-grow: 1; font-size: 30px; width: 20%; justify-content: center; align-items: center; -unity-text-align: upper-center;">
+            <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" style="white-space: nowrap; -unity-text-align: upper-right; justify-content: center; align-items: center; font-size: 25px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; width: 100%;">
+            <ui:ProgressBar value="100" title="Health" name="Health" style="height: 40px; width: 40%; align-self: center; justify-content: space-between; -unity-text-align: middle-left; margin-right: 4px; font-size: 20px; padding-top: 0; opacity: 0.7; flex-grow: 0;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; font-size: 30px; width: 20%; justify-content: center; align-items: center; -unity-text-align: upper-center;">
+            <ui:Label tabindex="-1" text="100/100" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LaserTime" enable-rich-text="true" style="white-space: nowrap; -unity-text-align: upper-right; justify-content: center; align-items: center;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

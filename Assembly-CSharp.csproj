@@ -64,6 +64,7 @@
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\Scripts\Bananaman" />
      <Folder Include="Assets\UI Toolkit" />
+     <None Include="Assets\UI Toolkit\Layouts\ProgressBar.uss" />
      <Folder Include="Assets\Materials" />
      <Folder Include="Assets\Scenes\SampleScene" />
      <Folder Include="Assets\Scripts\Enemies" />
