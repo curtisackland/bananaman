@@ -6,6 +6,8 @@ using UnityEngine.UIElements;
 public class PlayerHUD : MonoBehaviour
 {
     public UIDocument UIDoc;
+    public Player bananaman;
+    
     // Start is called before the first frame update
     void Start()
     {

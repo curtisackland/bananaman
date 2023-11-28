@@ -1449,6 +1449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIDoc: {fileID: 526693414}
+  bananaman: {fileID: 1361195009}
 --- !u!1001 &566338197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2877,7 +2878,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889803415}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.03490654, y: 0.87283933, z: -0.063126445, w: -0.48264712}
+  m_LocalRotation: {x: -0.034906536, y: 0.8728393, z: -0.063126445, w: -0.4826471}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4016,6 +4017,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 81bb9eea30387e442899949a80011e55, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1361195008}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 81bb9eea30387e442899949a80011e55, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1361195009}
   m_SourcePrefab: {fileID: 100100000, guid: 81bb9eea30387e442899949a80011e55, type: 3}
 --- !u!1001 &1189551922
 PrefabInstance:
@@ -4527,6 +4531,24 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1361195009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361195002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f73480f3aa17444b852a5fa22c6c2a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxLaserTime: 100
+  currentLasterTime: 100
+  maxLaserCooldown: 2
+  currentLaserCooldown: 0
+  health: 100
+  score: 0
 --- !u!1001 &1368623556
 PrefabInstance:
   m_ObjectHideFlags: 0
