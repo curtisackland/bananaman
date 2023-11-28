@@ -48,7 +48,9 @@
      <Compile Include="Assets\Scripts\Enemies\EnemyController.cs" />
      <Compile Include="Assets\Scripts\Menus\LeaderboardController.cs" />
      <Compile Include="Assets\Scripts\Bananaman\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Bananaman\Player.cs" />
      <Compile Include="Assets\Scripts\Portals\Portal.cs" />
+     <Compile Include="Assets\Scripts\Menus\PlayerHUD.cs" />
      <Compile Include="Assets\Scripts\Menus\PauseMenuController.cs" />
      <Compile Include="Assets\Scripts\Menus\MainMenuController.cs" />
      <Folder Include="Assets" />
@@ -67,6 +69,7 @@
      <Folder Include="Assets\Scripts\Enemies" />
      <Folder Include="Assets\Scenes\Nav Mesh" />
      <Folder Include="Assets\Animations" />
+     <None Include="Assets\UI Toolkit\Layouts\PlayerHUD.uxml" />
      <Folder Include="Assets\UI Toolkit\Layouts" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
