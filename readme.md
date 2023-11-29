@@ -26,12 +26,12 @@ Features:
 - Custom main menu design with Bananaman image
 
 Resources:
-Map: https://assetstore.unity.com/packages/3d/environments/low-poly-fps-map-lite-258453
-Animations: https://assetstore.unity.com/packages/3d/animations/basic-motions-free-154271
-Banaman: https://assetstore.unity.com/packages/3d/characters/humanoids/banana-man-196830
-Enemies: https://assetstore.unity.com/packages/3d/characters/creatures/rpg-monster-duo-pbr-polyart-157762
-Item drops: https://assetstore.unity.com/packages/3d/props/furniture/boxes-pack-32717
-Crosshair image: https://www.flaticon.com/free-icon/crosshair_7686271
-Day/Night cycle tutorial: https://www.youtube.com/watch?v=m9hj9PdO328
-Laser sound effect: https://pixabay.com/sound-effects/highvoltage-19930/
-Bananaman Main Menu image was generated with: https://creator.nightcafe.studio/
+- Map: https://assetstore.unity.com/packages/3d/environments/low-poly-fps-map-lite-258453
+- Animations: https://assetstore.unity.com/packages/3d/animations/basic-motions-free-154271
+- Banaman: https://assetstore.unity.com/packages/3d/characters/humanoids/banana-man-196830
+- Enemies: https://assetstore.unity.com/packages/3d/characters/creatures/rpg-monster-duo-pbr-polyart-157762
+- Item drops: https://assetstore.unity.com/packages/3d/props/furniture/boxes-pack-32717
+- Crosshair image: https://www.flaticon.com/free-icon/crosshair_7686271
+- Day/Night cycle tutorial: https://www.youtube.com/watch?v=m9hj9PdO328
+- Laser sound effect: https://pixabay.com/sound-effects/highvoltage-19930/
+- Bananaman Main Menu image was generated with: https://creator.nightcafe.studio/
