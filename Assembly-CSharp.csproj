@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\Bananaman\Player.cs" />
      <Compile Include="Assets\Scripts\Portals\Portal.cs" />
      <Compile Include="Assets\Scripts\Menus\PlayerHUD.cs" />
+     <Compile Include="Assets\Scripts\Drops\DropsManager.cs" />
      <Compile Include="Assets\Scripts\Menus\PauseMenuController.cs" />
      <Compile Include="Assets\Scripts\Menus\MainMenuController.cs" />
      <Folder Include="Assets" />
@@ -68,6 +69,7 @@
      <Folder Include="Assets\Materials" />
      <Folder Include="Assets\Scenes\SampleScene" />
      <Folder Include="Assets\Scripts\Enemies" />
+     <Folder Include="Assets\Scripts\Drops" />
      <Folder Include="Assets\Scenes\Nav Mesh" />
      <Folder Include="Assets\Animations" />
      <None Include="Assets\UI Toolkit\Layouts\PlayerHUD.uxml" />
