@@ -15,6 +15,7 @@ public class Portal : MonoBehaviour
             cc.enabled = false;
             // Teleport the player to the specified destination
             other.gameObject.transform.position = targetLocation.position;
+            other.gameObject.transform.Rotate(0, 180, 0);
             cc.enabled = true;
         }
     }
