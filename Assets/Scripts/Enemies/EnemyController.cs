@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,7 +8,8 @@ public class EnemyController : MonoBehaviour
 {
     public Transform target;
 
-    public int hp = 5;
+    public float hp = 100f;
+    public float scoreForDamage = 10f;
     
     [HideInInspector]
     public NavMeshAgent agent;
@@ -29,8 +31,9 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    public void doDamage(int damage)
+    public float doDamage(float damage)
     {
-        hp -= damage;
+        hp -= damage * Time.deltaTime;
+        return scoreForDamage * damage * Time.deltaTime;
     }
 }
