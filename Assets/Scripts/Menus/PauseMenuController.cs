@@ -31,10 +31,16 @@ public class PauseMenuController : MonoBehaviour
         if (paused)
         {
             UIDoc.rootVisualElement.style.display = DisplayStyle.Flex;
+            
+            UnityEngine.Cursor.lockState = CursorLockMode.None;
+            UnityEngine.Cursor.visible = true;
         }
         else
         {
             UIDoc.rootVisualElement.style.display = DisplayStyle.None;
+            
+            UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+            UnityEngine.Cursor.visible = false;
         }
         
         isPaused = paused;

@@ -28,4 +28,9 @@ public class EnemyController : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void doDamage(int damage)
+    {
+        hp -= damage;
+    }
 }
