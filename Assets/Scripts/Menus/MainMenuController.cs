@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
+using Cursor = UnityEngine.Cursor;
 
 public class MainMenuController : MonoBehaviour
 {
@@ -35,6 +36,9 @@ public class MainMenuController : MonoBehaviour
         
         buttonStart.clicked += () => LoadScene("Main Scene");
         buttonExit.clicked += () => QuitGame();
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     void LoadScene(string sceneName)
