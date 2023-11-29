@@ -27,7 +27,7 @@ public class EnemyController : MonoBehaviour
 
         if (hp <= 0)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 
