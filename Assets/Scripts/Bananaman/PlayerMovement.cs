@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Cinemachine;
 using Cinemachine.Utility;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,7 +12,8 @@ public class PlayerMovement : MonoBehaviour
     public Transform camera;
     public Animator playerAnimator;
     
-    public float speed;
+    public float walkingSpeed;
+    public float runningSpeed;
     public float SmoothTime = 0.3f;
     private float velocity;
     
@@ -32,8 +34,16 @@ public class PlayerMovement : MonoBehaviour
         }
         playerAnimator.SetInteger("direction", animationDirection);
         
-        
-        controller.Move(transform.rotation * dir * (speed * Time.deltaTime));
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            playerAnimator.SetBool("isSprinting", true);
+            controller.Move(transform.rotation * dir * (runningSpeed * Time.deltaTime));
+        }
+        else
+        {
+            playerAnimator.SetBool("isSprinting", false);
+            controller.Move(transform.rotation * dir * (walkingSpeed * Time.deltaTime));
+        }
         
     }
 }
