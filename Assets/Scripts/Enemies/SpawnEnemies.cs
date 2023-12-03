@@ -10,11 +10,25 @@ public class SpawnEnemies : MonoBehaviour
 
     public EnemyController turtle;
 
+    public EnemyController ghost;
+    
+    public EnemyController snowman;
+
     private GameObject slimeGameObject;
 
     private GameObject turtleGameObject;
 
+    private GameObject ghostGameObject;
+    
+    private GameObject snowmanGameObject;
+
     public List<Transform> spawns;
+    
+    public LightingManager lightingManager;
+
+    private bool ghostHasSpawned = false;
+    
+    private bool snowmanHasSpawned = false;
 
     public int round = 1;
     
@@ -23,6 +37,8 @@ public class SpawnEnemies : MonoBehaviour
     {
         slimeGameObject = slime.gameObject;
         turtleGameObject = turtle.gameObject;
+        ghostGameObject = ghost.gameObject;
+        snowmanGameObject = snowman.gameObject;
     }
 
     // Update is called once per frame
@@ -37,6 +53,27 @@ public class SpawnEnemies : MonoBehaviour
             turtleGameObject.SetActive(true);
             slimeGameObject.transform.position = spawns[Random.Range(0, spawns.Count - 1)].position;
             turtleGameObject.transform.position = spawns[Random.Range(0, spawns.Count - 1)].position;
+        }
+        
+        if ((lightingManager.TimeOfDay >= 18 || lightingManager.TimeOfDay <= 6) && !ghostHasSpawned)
+        {
+            snowmanGameObject.SetActive(false);
+            snowmanHasSpawned = false;
+            
+            ghostGameObject.SetActive(true);
+            ghostGameObject.transform.position = spawns[Random.Range(0, spawns.Count - 1)].position;
+            ghost.hp = 100 * round;
+            ghostHasSpawned = true;
+        }
+        else if ((lightingManager.TimeOfDay < 18 && lightingManager.TimeOfDay > 6) && !snowmanHasSpawned)
+        {
+            ghostGameObject.SetActive(false);
+            ghostHasSpawned = false;
+            
+            snowmanGameObject.SetActive(true);
+            snowmanGameObject.transform.position = spawns[Random.Range(0, spawns.Count - 1)].position;
+            snowman.hp = 100 * round;
+            snowmanHasSpawned = true;
         }
     }
 }
