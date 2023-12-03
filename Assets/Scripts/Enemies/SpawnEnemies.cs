@@ -48,7 +48,9 @@ public class SpawnEnemies : MonoBehaviour
         {
             round++;
             slime.hp = 100 * round;
+            slime.maxHp = 100 * round;
             turtle.hp = 100 * round;
+            turtle.maxHp = 100 * round;
             slimeGameObject.SetActive(true);
             turtleGameObject.SetActive(true);
             slimeGameObject.transform.position = spawns[Random.Range(0, spawns.Count - 1)].position;
@@ -63,6 +65,7 @@ public class SpawnEnemies : MonoBehaviour
             ghostGameObject.SetActive(true);
             ghostGameObject.transform.position = spawns[Random.Range(0, spawns.Count - 1)].position;
             ghost.hp = 100 * round;
+            ghost.maxHp = 100 * round;
             ghostHasSpawned = true;
         }
         else if ((lightingManager.TimeOfDay < 18 && lightingManager.TimeOfDay > 6) && !snowmanHasSpawned)
@@ -73,6 +76,7 @@ public class SpawnEnemies : MonoBehaviour
             snowmanGameObject.SetActive(true);
             snowmanGameObject.transform.position = spawns[Random.Range(0, spawns.Count - 1)].position;
             snowman.hp = 100 * round;
+            snowman.maxHp = 100 * round;
             snowmanHasSpawned = true;
         }
     }
