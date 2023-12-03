@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
         }
         playerAnimator.SetInteger("direction", animationDirection);
         
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift) && (3 <= animationDirection && animationDirection <= 5))
         {
             playerAnimator.SetBool("isSprinting", true);
             controller.Move(transform.rotation * dir * (runningSpeed * Time.deltaTime));
